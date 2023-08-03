@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2> my first JavaScript</h2>
+    <botton type ="button"
+    onclick="document.getElementById('demo').innerHTML=Date()">
+    Click me to display Date and Time.</botton>
+    <p id="demo"></p>
+    <p id="paragrafo"> olá!</p>
+  <script>
+    function MFuncao(){
+        var x = document.getElementById("paragrafo");
+        x.innerHTML="Hello!";
+    }
+  </script>
+  <button type="button" onclick="MFuncao();"> translate</button>
+  <button type="button"onclick=alert('Bem vindo!')"> Clique aqui!</button>
+    
+  
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>função</title>
+</head>
+<body>
+    <script>
+    function somaDoisNumeros(numero1,numero2){
+        alert(numero1+numero2);
+    }
+    // somaDoisNumeros(10,20);//exibe 30
+     //função  com parametro  e retorno
+
+     function somaDoisNumeros(numero1,numero2){
+        return numero1 + numero2
+     }
+     var numero =80;
+     var resultado = somaDoisNumeros(10,20);
+     alert(numero-resultado);
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <body id="corpo">
+        <h1> Adicionar Elementos</h1>
+        <p>  Digite o texto: <input type="text" id= "texto"></p>
+        <p><button onclick="adicionar()">Adicionar</button></p>
+        <script>
+            function adiconar(){
+                var texto = document.getElementById("texto").value;
+                var para = document.createDocumentFragment("p");
+                para.innerHTML = texto;
+                var corpo = document.getElementById("corpo");
+                corpo.appendChild(para);
+            }
+        </script>
+        
+</body>
+</html>
+
+
+
+
