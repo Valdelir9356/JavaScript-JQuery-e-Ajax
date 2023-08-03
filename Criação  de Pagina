@@ -1,0 +1,98 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <LINK rel="STYLESHEET" TYPE="TEXT/CSS" href="./css/estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Padrão html sem Javascript</title>
+    
+      
+        
+</head>
+
+    <script>
+        function validar(){
+            if(document.cadastro.nome.value == "")
+            {window.alert("Você deve preencher o campo Nome.");
+            document.cadastro.nome.focus();
+            return false;
+        }
+        if (document.cadastro.observacoes.value=="")
+        {window.alert("voce deve colocar alguma observação...");
+         document.cadastro.observacoes.focus();
+         return false;
+        }
+        }
+       </script>
+       <body class="aa" bgcolor="green">
+        <div class="aa">
+        
+   <FORM NAME="cadastro">
+
+    <p> Por favor, preencha os campos abaixo para encontrar o veiculo desejado e clique no botão Enviar. caso<br>
+    necessite apagar os dados, dê um clique no botão limpar.<br>
+     Muito Obrigado!<br><br></p>
+     Nome Completo: <input type="text" Name="nome" Size="75"><br><br>
+     Seu e-mail: <input type="text" Name="email" Size="75"><br><br>
+     Seu telefone: <input type="text" Name="email" Size="35"><br><br>
+
+     Categoria:<br>
+     <input type="Radio" Name="categoria" Value="cr">Carro<br>
+     <input type="Radio" Name="categoria" Value="mt">Moto<br><br>
+
+     Estilo Carro:<br>
+     <input type="Radio" Name="estilo" Value="cr">Pickup<br>
+     <input type="Radio" Name="estilo" Value="cr">Sedan<br>
+     <input type="Radio" Name="estilo" Value="cr">Hatch<br><br>
+
+     Estilo Moto:<br>
+     <input type="Radio" Name="estilo" Value="mt">Trial<br>
+     <input type="Radio" Name="estilo" Value="mt">Esportivas<br>
+     <input type="Radio" Name="estilo" Value="mt">Custon<br>
+
+     Faixa de Valor: <select name="faixaidade">
+        <option value="5ka10k"> 50000 a 10000 R$
+        <option value="11ka25k"> 11000 a 25000 R$ 
+        <option value="26ka50k"> 260000 a 500000 R$ 
+        <option value="51ka100k"> 510000 a 10000 R$ 
+        <option value="101ka1000k"> 100000 a 100000000 R$
+     </select><br><br>
+
+     marcas preferido: <select name="preferencia">
+        <option value="honda">Agressividade</option>
+        <option value="toyota">Durabolidade Qualidade</option>
+        <option value="peugeot">Gosto de me Encomodar</option>
+        <option value="harley">Rock na veia</option>
+        <option value="dodge ram">Bruta</option>
+     </select><br><br>
+     
+     observação Gerais do carro ou moto desejado:<br>
+     <textarea name="observacoes" rows="5" cols="60"></textarea><br>
+
+     <input type="submit" value="enviar os dados" onclick="validar();">
+     <input type="reset" value="limpar os dados"><br>
+     <form>
+        Pergunta: Quanto e 5+2x2=?<br><br>
+        <input type="button" value="I" onclick="alert('A:Vc é antagonal ascesso negaddo')">108<br>
+        <input type="button" value="II" onclick="alert('B:vc quer comopar, ascesso liberado')">9<br>
+        <input type="button" value="III" onclick="alert('B:simulação negadao, ascesso negado')">207<br>
+     <a href="https://www.webmotors.com.br/"><img src="./img/gif de clic.GIF"
+   </FORM> 
+    <img src="./img/Ducati-Diavel-Lamborghini .jpeg"width ="90%" height="99%"
+
+</body>
+</html>
+
+
+***css**
+.aa{
+    color:rgb(24, 20, 20);
+    font-family: 'Times New Roman', serif;
+    font-weight:bold;
+    font-size:20px;
+    position: relative;
+    left: 40px;
+    }
+
+
