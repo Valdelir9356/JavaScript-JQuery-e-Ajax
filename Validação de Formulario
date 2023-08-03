@@ -1,0 +1,400 @@
+***Validação de Formulario1**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pesquisa(){
+            window.open("http://aonde.com.br");
+        }
+        function diversao(){
+            window.open("https://www.betocarrero.com.br/", width= 250, height =400);
+        }
+        function animais(){
+            window.open("https://zoopomerode.com.br", width=400,height=250)
+        }
+
+    </script>
+</head>
+
+<body>
+    <form> de um clique na opção pesquisa:
+        <input type ="button" name="lincar"value="janela1" onclick="pesquisa()"><br><br>
+        de um clique na opção diversao:
+        <input type ="button" name="lincar"value="janela2" onclick="diversao()"><br><br>
+        de um clique na opção animais:
+        <input type ="button" name="lincar"value="janela3" onclick="animais()"><br><br>
+
+    </form>
+</body>
+</html>
+
+
+**Validação de Formulario 2*
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <body id="corpo">
+        <h1> Adicionar Elementos</h1>
+        <p>  Digite o texto: <input type="text" id= "texto"></p>
+        <p><button onclick="adicionar()">Adicionar</button></p>
+        <script>
+            function adiconar(){
+                var texto = document.getElementById("texto").value;
+                var para = document.createDocumentFragment("p");
+                para.innerHTML = texto;
+                var corpo = document.getElementById("corpo");
+                corpo.appendChild(para);
+            }
+        </script>
+        
+</body>
+</html>
+
+
+**Validação de Formulario 3*
+              <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Padrão html sem Javascript</title>
+</head>
+<body bgcolor="377788">
+    <script>
+        function validar(){
+            if(document.cadastro.nome.value == "")
+            {window.alert("Você deve preencher o campo Nome.");
+            document.cadastro.nome.focus();
+            return false;
+        }
+        if (document.cadastro.observacoes.value=="")
+        {window.alert("voce deve colocar alguma observação...");
+         document.cadastro.observacoes.focus();
+         return false;
+        }
+        }
+       </script>
+   <FORM NAME="cadastro">
+
+    <p> por favor, preencha os campos abaixo clique no botão Enviar. caso<br>
+    necessite apagar os dados, dê um clique no botão limpar.<br>
+     Muito Obrigado!<br><br></p>
+     Nome Completo: <input type="text" Name="nome" Size="35"><br><br>
+     Seu e-mail: <input type="text" Name="email" Size="35"><br>
+     sexo:<br>
+     <input type="Radio" Name="sexo" Value="f">Feminino<br><br>
+     <input type="Radio" Name="sexo" Value="m">Masculino<br><br>
+
+     Estado Civil:<br>
+     <input type="Radio" Name="civil" Value="f">Solteiro<br>
+     <input type="Radio" Name="civil" Value="f">Casado<br>
+     <input type="Radio" Name="civil" Value="f">Enrolado<br>
+
+     Bens que possui:<br>
+     <input type="Radio" Name="bens" Value="f">casa<br>
+     <input type="Radio" Name="bens" Value="f">automovel<br>
+     <input type="Radio" Name="bens" Value="f">moto<br>
+
+     Faixa de idade: <select name="faixaidade">
+        <option value="3a10"> 3 a 10 anos 
+        <option value="11a25"> 11 a 25 anos 
+        <option value="26a35"> 26 a 35 anos 
+        <option value="36a55"> 36 a 55 anos 
+        <option value="56a90"> 56 a 90 anos 
+     </select><br><br>
+
+     hobby preferido: <select name="hobby">
+        <option value="livos">ler livros</option>
+        <option value="musicas">ouvir musica</option>
+        <option value="cinema">assistir filmes</option>
+        <option value="esporte">praticar esportes</option>
+        <option value="games">jogar games</option>
+     </select><br><br>
+     ]
+     observação Gerais:<br>
+     <textarea name="observacoes" rows="5" cols="60"></textarea><br>
+
+     <input type="submit" value="enviar os dados" onclick="validar();">
+     <input type="reset" value="limpar os dados"><br>
+     
+   </FORM> 
+    <img src="./planeta.gif"width ="50%" height="50%"
+
+
+</body>
+
+</html>
+
+**validação formulario4**
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pesquisa(){
+            window.open("http://aonde.com.br");
+        }
+        function diversao(){
+            window.open("https://www.betocarrero.com.br/", width= 250, height =400);
+        }
+        function animais(){
+            window.open("https://zoopomerode.com.br", width=400,height=250)
+        }
+
+    </script>
+</head>
+
+<body>
+    <form> de um clique na opção pesquisa:
+        <input type ="button" name="lincar"value="janela1" onclick="pesquisa()"><br><br>
+        de um clique na opção diversao:
+        <input type ="button" name="lincar"value="janela2" onclick="diversao()"><br><br>
+        de um clique na opção animais:
+        <input type ="button" name="lincar"value="janela3" onclick="animais()"><br><br>
+
+    </form>
+</body>
+</html>
+
+          **validação formulario 5**
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contas</title>
+    <script>
+function quadrado(x){
+    document.write(x*x);
+}
+function cubo(x){
+    document.write(x*x*x);
+}
+function soma(x){
+    document.write(x+x);
+}
+y=5;
+document.write("O quadrado de "+y+"é igual a");
+quadrado(y);
+
+    </script>
+</head>
+<body>
+    <form ><br> informe  um valor  para saber  se o seu cubo, e em seguida pressione a tecla tab<br>
+        ou de um clique  fora da caixa  de texto.<br>
+
+        <input type="text" name="ao cubo" value="" onblur="alert('o Cubo de '+this.value+ ' é '
+       +cubo(this.value))">
+    
+    </form>
+</body>
+</html>
+          **validação formulario 6**
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marque a resposta certa</title>
+</head>
+<body>
+    <form>
+        Pergunta: Quanto e 52+2x2=?<br><br>
+        <input type="button" value="I" onclick="alert('A:Vc é antagonal')">108<br>
+     
+        <input type="button" value="II" onclick="alert('B:Volta para o primario')">207<br>
+      
+        <input type="button" value="III" onclick="alert('C:Você esta correto disso')">1038<br>
+        
+        <input type="button" value="IV" onclick="alert('D:vc dever ter chutado para ascertar')">108<br>
+       
+        <input type="button" value="V" onclick="alert('E:Eu não sei')"> Como não sabe<br>
+
+
+    </form>
+    
+</body>
+</html>
+
+          **validação formulario 7**
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function soma()
+{
+    x=eval(document.prova.c1.value)+eval(document.prova.c2.value)+eval(document.prova.c3.value);
+    document.prova.c4.value=x;
+
+}
+function multiplica(){
+    y=eval(document.prova.c1.value)*eval(document.prova.c2.value)*eval(document.prova.c3.value);
+    document.prova.c4.value=y;
+}
+   </script> 
+
+<body>
+  <form name="prova">
+    entre em com os valores (natas) nos campos correspondentes  e dê um clique nos botões.<br><br>
+    valor1: <input type="text" name="c1" value="" size="5" maxlength="5"><br>
+    valor2: <input type="text" name="c2" value="" size="5" maxlength="5"><br>
+    valor3: <input type="text" name="c3" value="" size="5" maxlength="5"><br>
+        
+    <input type="button" value="Somar" onclick="soma()"><br>
+    <input type="button" value="Multiplicar" onclick="multiplica()"><br><br>
+    Resposta: <input type="text" name="c4" value=""size="10" maxlength="10">
+
+  </form>
+</body>
+</html>
+
+   **validação formulario 8**
+  
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+function compo_obrigatorio(x){
+    if(x.value==""){
+        alert("O Campo"+x.name + "não pode  ficar em branco")
+    }
+}
+
+
+</script>
+<body>
+   nota: os campos marcados ccom asteristicos são obrigatórios.<br><br>
+   <form>
+Nome Compelto:<input type="text" name="nome" value="" size="30"maxlength="30" onblur="campo_obrigatorio(this)"><br><br>
+    Idade:<input type="text" name="Idade" value="" size="5"maxlength="5" ><br><br>
+        Cidade:<input type="text" name="Cidade" value="" size="20"maxlength="20" onblur="campo_obrigatorio(this)"><br><br>
+            Telefone: <input type="text" name="telefone" value="" size="15"maxlength="15" >
+               
+
+   </form>
+    
+
+</body>
+</html>
+
+   **validação formulario 9**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <LINK rel="STYLESHEET" TYPE="TEXT/CSS" href="./css/estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Padrão html sem Javascript</title>
+    
+      
+        
+</head>
+
+    <script>
+        function validar(){
+            if(document.cadastro.nome.value == "")
+            {window.alert("Você deve preencher o campo Nome.");
+            document.cadastro.nome.focus();
+            return false;
+        }
+        if (document.cadastro.observacoes.value=="")
+        {window.alert("voce deve colocar alguma observação...");
+         document.cadastro.observacoes.focus();
+         return false;
+        }
+        }
+       </script>
+       <body class="aa" bgcolor="green">
+        <div class="aa">
+        
+   <FORM NAME="cadastro">
+
+    <p> Por favor, preencha os campos abaixo para encontrar o veiculo desejado e clique no botão Enviar. caso<br>
+    necessite apagar os dados, dê um clique no botão limpar.<br>
+     Muito Obrigado!<br><br></p>
+     Nome Completo: <input type="text" Name="nome" Size="75"><br><br>
+     Seu e-mail: <input type="text" Name="email" Size="75"><br><br>
+     Seu telefone: <input type="text" Name="email" Size="35"><br><br>
+
+     Categoria:<br>
+     <input type="Radio" Name="categoria" Value="cr">Carro<br>
+     <input type="Radio" Name="categoria" Value="mt">Moto<br><br>
+
+     Estilo Carro:<br>
+     <input type="Radio" Name="estilo" Value="cr">Pickup<br>
+     <input type="Radio" Name="estilo" Value="cr">Sedan<br>
+     <input type="Radio" Name="estilo" Value="cr">Hatch<br><br>
+
+     Estilo Moto:<br>
+     <input type="Radio" Name="estilo" Value="mt">Trial<br>
+     <input type="Radio" Name="estilo" Value="mt">Esportivas<br>
+     <input type="Radio" Name="estilo" Value="mt">Custon<br>
+
+     Faixa de Valor: <select name="faixaidade">
+        <option value="5ka10k"> 50000 a 10000 R$
+        <option value="11ka25k"> 11000 a 25000 R$ 
+        <option value="26ka50k"> 260000 a 500000 R$ 
+        <option value="51ka100k"> 510000 a 10000 R$ 
+        <option value="101ka1000k"> 100000 a 100000000 R$
+     </select><br><br>
+
+     marcas preferido: <select name="preferencia">
+        <option value="honda">Agressividade</option>
+        <option value="toyota">Durabolidade Qualidade</option>
+        <option value="peugeot">Gosto de me Encomodar</option>
+        <option value="harley">Rock na veia</option>
+        <option value="dodge ram">Bruta</option>
+     </select><br><br>
+     
+     observação Gerais do carro ou moto desejado:<br>
+     <textarea name="observacoes" rows="5" cols="60"></textarea><br>
+
+     <input type="submit" value="enviar os dados" onclick="validar();">
+     <input type="reset" value="limpar os dados"><br>
+     <form>
+        Pergunta: Quanto e 5+2x2=?<br><br>
+        <input type="button" value="I" onclick="alert('A:Vc é antagonal ascesso negaddo')">108<br>
+        <input type="button" value="II" onclick="alert('B:vc quer comopar, ascesso liberado')">9<br>
+        <input type="button" value="III" onclick="alert('B:simulação negadao, ascesso negado')">207<br>
+     <a href="https://www.webmotors.com.br/"><img src="./img/gif de clic.GIF"
+   </FORM> 
+    <img src="./img/Ducati-Diavel-Lamborghini .jpeg"width ="90%" height="99%"
+
+</body>
+
+</html>
+
+
+      
+      
+          
+
+          
